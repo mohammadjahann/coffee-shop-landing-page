@@ -3,6 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Swipper css -->
+     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
     <link rel="stylesheet" href="./style/style.css">
     <title>Document</title>
@@ -130,8 +132,53 @@
             </div>
         </section>
 
+        <!-- comment section -->
+
+        <sectioon class="comment-section">
+            <h2 class="section-title">نظرات شما</h2>
+            <div class="section-content">
+                <div class="slider-container swiper">
+                    <div class="slider-wrapper">
+                        <ul class="comment-list swiper-wrapper">
+                            <li class="comment swiper-slide">
+                                <img src="./images/user-1.jpg" alt="" class="user-image">
+                                <h3 class="name">سارا</h3>
+                                <span class="feedback">لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است</span>
+                            </li>
+                            <li class="comment swiper-slide">
+                                <img src="./images/user-2.jpg" alt="" class="user-image">
+                                <h3 class="name">پاپت</h3>
+                                <span class="feedback">لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است</span>
+                            </li>
+                            <li class="comment swiper-slide">
+                                <img src="./images/user-3.jpg" alt="" class="user-image">
+                                <h3 class="name">احمد ذوقی</h3>
+                                <span class="feedback">لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است</span>
+                            </li>
+                            <li class="comment swiper-slide">
+                                <img src="./images/user-4.jpg" alt="" class="user-image">
+                                <h3 class="name">جعفر</h3>
+                                <span class="feedback">لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است</span>
+                            </li>
+                            <li class="comment swiper-slide">
+                                <img src="./images/user-5.jpg" alt="" class="user-image">
+                                <h3 class="name">محمد</h3>
+                                <span class="feedback">لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است</span>
+                            </li>
+                        </ul>
+
+                        <div class="swiper-pagination"></div>
+                        <div class="swiper-slide-button swiper-button-prev"></div>
+                        <div class="swiper-slide-button swiper-button-next"></div>
+                    </div>
+                </div>
+            </div>
+        </sectioon>
+
     </main>
     
+    <!-- Swipperjs -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <script src="./script/script.js"></script>
 </body>
 </html>

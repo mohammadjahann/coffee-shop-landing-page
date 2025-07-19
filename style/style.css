@@ -305,6 +305,61 @@ header {
     font-size: var(--font-size-m);
 }
 
+
+/* comment section */
+
+.comment-section{
+    padding: 50px 0 100px;
+    background: var(--light-pink-color);
+}
+
+.comment-section .comment{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 35px;
+    text-align: center;
+}
+
+.comment-section .comment .user-image{
+    width: 180px;
+    height: 180px;
+    object-fit: cover;
+    border-radius: var(--border-radius-circle);
+    margin-bottom: 50px;
+}
+
+.comment-section .comment .name {
+    margin-bottom: 16px;
+    font-size: var(--font-size-m);
+}
+
+.comment-section .comment .feedback {
+    line-height: 25px;
+}
+
+.comment-section .swiper-pagination-bullet {
+    width: 15px;
+    height: 15px;
+    opacity: 1;
+    background: var(--secondary-color);
+}
+ 
+.comment-section .swiper-slide-button{
+    color: var(--secondary-color);
+    transition: 0.3s ease;
+    margin-top: -100px;
+}
+
+.comment-section .swiper-slide-button:hover{
+    color: var(--primary-color)
+}
+
+.comment-section .slider-wrapper {
+    overflow: hidden;
+    margin: 0 60px 50px;
+
+}
  /* Responsive of 1024 px */
 
  @media screen and ( max-width:1024px ){
@@ -444,6 +499,7 @@ header {
     }
  }
 
+ /* Responsive of 650 px */
 
  @media screen and (max-width: 640px) {
     .menu-section .menu-list {
@@ -453,6 +509,14 @@ header {
     .menu-section .menu-list .menu-item {
         
         width: 100%;
+    }
+
+    .comment-section .swiper-slide-button {
+        display: none;
+    }
+
+    .comment-section .slider-wrapper {
+        margin: 0 0 30px;
     }
 
 
