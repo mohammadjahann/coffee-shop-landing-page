@@ -42,6 +42,10 @@
     --site-max-width:1300px; 
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 /* Styling for whole project */
 
 ul {

@@ -1,5 +1,6 @@
 const menuOpenBtn = document.querySelector('#menu-open-button')
 const menuCloseBtn = document.querySelector('#menu-close-button')
+const navLinks = document.querySelectorAll('.nav-link')
 
 menuOpenBtn.addEventListener('click',event=>{
     document.body.classList.toggle("show-mobile-menu")
@@ -40,3 +41,14 @@ const swiper = new Swiper('.slider-wrapper', {
     }
     
   });
+
+
+// add close menu for each nav link
+
+navLinks.forEach((nav)=>{
+    nav.addEventListener('click',()=>{
+        document.body.classList.toggle("show-mobile-menu")
+    })
+    
+})
+  
