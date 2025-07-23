@@ -460,6 +460,37 @@ header {
     color: var(--primary-color);
 }
 
+/* Footer section */
+
+.footer-section {
+    background: var(--dark-color);
+    padding: 20px 0;
+}
+
+.footer-section .section-content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.footer-section .social-link-list {
+    display: flex;
+    gap: 25px;
+}
+
+.footer-section .social-link-list .social-link {
+    font-size: var(--font-size-l);
+}
+
+.footer-section .social-link-list .social-link:hover {
+    color: var(--secondary-color);
+}
+
+.footer-section :where(.copyright-text, .social-link){
+    color: var(--white-color);
+    transition: 0.3s ease;
+}
+
  /* Responsive of 1024 px */
 
  @media screen and ( max-width:1024px ){
